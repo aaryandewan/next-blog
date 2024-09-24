@@ -2,7 +2,7 @@ import React from "react";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Image from "next/image";
 import Link from "next/link";
-import { highlight } from "sugar-high";
+// import { highlight } from "sugar-high";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
@@ -16,14 +16,13 @@ function Blockquote(props: any) {
 }
 
 function Code({ children, ...props }: any) {
-  let codeHTML = highlight(children);
+  // let codeHTML = highlight(children);
   // return (
   //   <SyntaxHighlighter language="javascript" style={docco}>
   //     {children}
   //   </SyntaxHighlighter>
   // );
-
-  return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />;
+  // return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />;
 }
 
 function CustomLink(props: any) {
