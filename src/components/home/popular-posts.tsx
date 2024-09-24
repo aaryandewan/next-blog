@@ -34,8 +34,8 @@ export default function PopularPosts() {
         {popularPosts.map((post) => {
           return (
             <Link href={`/blog`} key={post.title}>
-              <li className="flex flex-center gap-2 cursor-pointer py-2">
-                <Icons.arrowRight />
+              <li className="flex flex-center gap-2 cursor-pointer py-2 group">
+                <Icons.arrowRight className="transition-transform group-hover:translate-x-1" />
                 <span>{post.title}</span>
               </li>
             </Link>

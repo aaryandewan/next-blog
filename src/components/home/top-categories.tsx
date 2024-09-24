@@ -10,7 +10,7 @@ export default function TopCatogories() {
         <Button
           key={post.title}
           variant={"secondary"}
-          className="hover:scale-110 transition-all"
+          className="hover:scale-105 transition-all"
           asChild
         >
           <Link href={post.href}>{post.title}</Link>
